@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            font-size: 36px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        section {
+            margin-top: 20px;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        select {
+            color: red;
+        }
+        #marqueeResult {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <b>Badani Tal Tour</b>
+    </header>
+
+    <img src="images/DSC_0555-1.webp" alt="Badani Tal Image">
+
+    <section>
+        <p><b>Karan</b></p>
+        <p><b>Mohit</b></p>
+        <p><b>Bipin</b></p>
+        <p><b>Ankit</b></p>
+        <p><b>Yogesh</b></p>
+    </section>
+
+    <section>
+        <form onsubmit="showMessage(); return false;">
+            <p style="color: red;">Which one do you think is the ugliest?</p>
+            <select name="ugliest" id="ugliestSelect">
+                <option value="karan">Karan</option>
+                <option value="mohit">Mohit</option>
+                <option value="bipin">Bipin</option>
+                <option value="ankit">Ankit</option>
+                <option value="yogesh">Yogesh</option>
+                <option value="all">All are handsome</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section>
+        <marquee behavior="scroll" direction="left" id="marqueeResult"></marquee>
+    </section>
+
+    <script>
+        function showMessage() {
+            // Your existing JavaScript code
+        }
+    </script>
+
+</body>
+</html>
